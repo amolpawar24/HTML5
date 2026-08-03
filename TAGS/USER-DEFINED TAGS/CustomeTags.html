@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Tags</title>
+    <style>
+      amol {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--! 2.CUSTOM TAGS  -->
+    <!--todo : Within the HTML spec, it is valid to create your own HTML tags,  -->
+    <!--todo : these are called custom elements and they must follow a strict naming convention for them to be valid.  -->
+    <!--* 1.Custom elements must have an opening and a corresponding closing tag.  -->
+    <!--* 2.Self-closing custom elements are not valid HTML. -->
+    <!--* 3.Custom tags must contain a hyphen (-)  -->
+    <!--* 4.start with an ASCII character (a-z)  -->
+    <!--* 5.and be all lowercase for them to be valid  -->
+
+    <!--! VALIDATING HTML CODE  -->
+    <!--todo : For validating the html code there is website  -->
+    <!--* https://validator.w3.org/ -->
+
+    <!--* If you do not follow the naming convension thenm you have to register this custom tag using Javascript  -->
+
+    <!--* If you want to register this custom tag with JavaScript  -->
+    <script>
+      class MyTag extends HTMLElement {
+        constructor() {
+          super();
+        }
+      }
+      customElements.define("amol-24", MyTag);
+    </script>
+
+    <amol>AMOL</amol>
+  </body>
+</html>

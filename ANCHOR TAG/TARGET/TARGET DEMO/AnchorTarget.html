@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchor Target Demo</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4;
+        padding: 30px;
+        line-height: 1.6;
+      }
+
+      .main {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .anchor {
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        border-left: 6px solid #0d6efd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .anchor h2 {
+        color: #0d6efd;
+        margin-bottom: 10px;
+      }
+
+      .anchor p {
+        margin-top: 10px;
+        color: #555555;
+      }
+
+      .anchor a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 18px;
+        background-color: #0d6efd;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .anchor a:hover {
+        background-color: #084298;
+      }
+
+      hr {
+        margin: 25px 0;
+        border: none;
+        border-top: 1px solid #cccccc;
+      }
+
+      .examples {
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        border: 2px solid #dddddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .examples h2 {
+        color: #0d6efd;
+        margin-bottom: 20px;
+      }
+
+      .example-item {
+        margin-bottom: 15px;
+      }
+
+      .examples a {
+        display: inline-block;
+        padding: 10px 18px;
+        background: #198754;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .examples a:hover {
+        background: #146c43;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--! ANCHOR TARGET DEMO -->
+    <!--? target="_blank" : Opens the linked document in a new tab or window. -->
+    <!--? target="_self" : Opens the linked document in the same tab (Default). -->
+    <!--? target="_parent": Opens the linked document in the parent frame (Used with iframes). -->
+    <!--? target="_top" : Opens the linked document in the full browser window, replacing all frames (Used with iframes). -->
+
+    <!--TODO target descriptions -->
+
+    <!--* 1. target="_blank" -->
+    <div class="main">
+      <div class="anchor">
+        <h2>target="_blank"</h2>
+
+        <a href="https://www.google.com/" target="_blank"> Open Google </a>
+
+        <p>Opens Google in a new browser tab.</p>
+      </div>
+
+      <hr />
+
+      <!--* 2. target="_self" -->
+      <div class="anchor">
+        <h2>target="_self"</h2>
+
+        <a href="https://www.google.com/" target="_self"> Open Google </a>
+
+        <p>Only the current (child) iframe changes.</p>
+      </div>
+
+      <hr />
+
+      <!--* 3. target="_parent" -->
+      <div class="anchor">
+        <h2>target="_parent"</h2>
+
+        <a href="../../../../../../ASSETS/IMAGES/Formal 1.png" target="_parent"> Open Image </a>
+
+        <p>Replaces the parent iframe (parent.html).</p>
+      </div>
+
+      <hr />
+
+      <!--* 4. target="_top" -->
+      <div class="anchor">
+        <h2>target="_top"</h2>
+
+        <a href="https://www.google.com/" target="_top"> Open Google </a>
+
+        <p>Replaces the entire browser window (index.html + all iframes).</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="examples">
+      <h2>Quick Examples</h2>
+
+      <div class="example-item">
+        <a href="https://www.google.com" target="_blank"> Google (_blank) </a>
+      </div>
+
+      <div class="example-item">
+        <a href="https://www.google.com" target="_self"> Google (_self) </a>
+      </div>
+
+      <div class="example-item">
+        <a href="https://www.google.com" target="_parent"> Google (_parent) </a>
+      </div>
+
+      <div class="example-item">
+        <a href="https://www.google.com" target="_top"> Google (_top) </a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Parent Frame</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        background: #d9f7ff;
+        padding: 20px;
+      }
+
+      h2 {
+        color: #198754;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 550px;
+        border: 4px solid green;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>PARENT FRAME (parent.html)</h2>
+
+    <p>
+      This page is loaded inside the first iframe. It contains another iframe.
+    </p>
+
+    <iframe src="AnchorTarget.html"></iframe>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #edf1f4;
+        }
+        fieldset{
+            width: 400px;
+            border: 2px solid;
+            margin: 0 auto;
+        }
+        legend{
+            font-size: 2.24;
+            font-weight: bold;
+            text-align: center;
+        }
+        form{
+            background-color: cyan;
+        }
+        input{
+            border: none;
+            outline: none;
+            box-shadow: 1px 2px 3px inset #fff;
+        }
+        button{
+            color: #fff;
+            height: 35px;
+            width: 74px;
+            border-radius: 10px;
+            border: none;
+            background-image: linear-gradient(180deg,red ,yellow);
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Student Form</legend>
+
+        <form action="">
+            <table>
+                <tr>
+                    <th><label for="fname">Name :</label></th>
+                    <td><input type="text" name="" id="fname" placeholder="Enter Your name" required minlength="4" maxlength="11" autofocus></td>
+                </tr>
+                <tr>
+                    <th>DOB :</th>
+                    <td><input type="date" name="" id="" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="">Gender</label></td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" name="gen" id="">Male</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" name="gen" id="">Female</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" name="gen" id="">Other</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <th><label for="mob">Mobile :</label></th>
+                    <td><input type="tel" name="" id="" required pattern="[0-9][10]"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email :</label></th>
+                    <td><input type="email" name="" id="email" required></td>
+                </tr>
+                <tr>
+                    <th><label for="">Address :</label></th>
+                    <td><textarea name="" id="" cols="35" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">SUBMIT</button></td>
+                    <td><button type="reset">RESET</button></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

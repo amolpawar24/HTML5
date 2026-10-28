@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            height: 250px;
+            width: 400px;
+            border: 2px solid;
+            margin: 0 auto;
+        }
+        legend{
+            font-size: 2rem;
+            font-weight: bolder;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--todo 1.pattern :- Pattern it is an Attribut used to define different pattern  -->
+    <!--todo 2.min :- You have to Enter the Minimum range  -->
+    <!--todo 3.max :- You have to Enter the Maximum range -->
+    <!--todo 4.minlength :- You have to Enter the Minimum length value -->
+    <!--todo 5.maxlength :- You have to Enter the Maximum length value-->
+    <!--todo 6.placeholder :-If there is no Label then there is a one attribute to identify the input field  -->
+    <!--todo 7.readonly :- If you assign the readonly then you cannot write any in input Field  -->
+    <!--todo 8.required : If required is there then it is mandatory to fill the Input Field -->
+    <!--todo 9.autofocus : If the Autofocus is assign to the input field the cursor is automatically goes in Input Field  -->
+
+    <fieldset>
+        <legend>FORM VALIDATION</legend>
+        <form action="">
+
+            <table>
+                <tr>
+                    <td><label for="">AutoFocus :</label></td>
+                    <td><input type="text" name="" id="" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="">Required :</label></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">ReadOnly</label></td>
+                    <td><input type="text" name="" id="" readonly placeholder="Do Not Write Here...!!!"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Placeholder</label></td>
+                    <td><input type="text" name="" id="" placeholder="Please Enter Text Here..!!!"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Minlength & Maxlength</label></td>
+                    <td><input type="text" name="" id="" minlength="4" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile[ Pattern ]</label></td>
+                    <td><input type="tel" name="" id="" pattern="[0-9]{10}"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Telephone</label></td>
+                    <td><input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Min and Max</label></td>
+                    <td><input type="date" name="" id="" min="2000-01-01" max="2024-04-24"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="SUBMIT"></td>
+                    <td><input type="reset" value="RESET"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
